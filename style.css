@@ -25,6 +25,15 @@ body {
     box-sizing: border-box;
 }
 
+.hero {
+    white-space: nowrap; /* Evita los saltos de línea */
+}
+
+.hero > * {
+    display: inline-block; /* Coloca los elementos en la misma línea */
+    margin-right: 10px; /* Añade un margen entre los elementos según tus preferencias */
+}
+
 /* Agregar estilos para el selector de idioma */
 #languageSelector {
     width: 100px;
@@ -40,6 +49,19 @@ body {
 #languageSelector option {
     background-color: rgb(151, 236, 22);
     color: rgb(48, 84, 48);
+}
+
+#input_run_time {
+    width: 30px;
+    padding: 5px;
+    font-size: 13px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #00ff1e81;
+    /* el color de fondo */
+    color: #333;
+    border-color: green;
+    overflow: hidden; 
 }
 
 /* Estilos de la primera sección (lado izquierdo) */
